@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomPackingCell" rowHeight="111" id="KGk-i7-Jjw" customClass="PackingCell" customModule="Pack_Buddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSM-6G-uPe" userLabel="Packing View">
+                        <rect key="frame" x="8" y="8" width="335" height="95"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-ia-IlD" userLabel="Front Square View">
+                                <rect key="frame" x="8" y="16" width="5" height="63"/>
+                                <color key="backgroundColor" name="AdditionalOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="5" id="lN7-CF-ko9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkZ-4i-RdG" userLabel="Title Label">
+                                <rect key="frame" x="21" y="15.999999999999998" width="220" height="23.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Trip to where am i doi">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="PlusJakartaSans-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1q-NK-XFM" userLabel="Date Label">
+                                <rect key="frame" x="21" y="41.333333333333336" width="220" height="14"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="16 Sep 2024 - 23 Sep 2024">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="PlusJakartaSans-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKj-SL-0KN" userLabel="Nights Label">
+                                <rect key="frame" x="21" y="57.333333333333329" width="220" height="13"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="7 Nights">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="11" name="PlusJakartaSans-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVq-by-HjI" customClass="CircularProgressBarView" customModule="Pack_Buddy" customModuleProvider="target">
+                                <rect key="frame" x="257" y="12.666666666666671" width="70" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Jvq-sm-q4g"/>
+                                    <constraint firstAttribute="width" constant="70" id="cdk-iF-J8b"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="MainBlack"/>
+                        <constraints>
+                            <constraint firstItem="AVq-by-HjI" firstAttribute="leading" secondItem="V1q-NK-XFM" secondAttribute="trailing" constant="16" id="2af-1B-waf"/>
+                            <constraint firstItem="AVq-by-HjI" firstAttribute="centerY" secondItem="PSM-6G-uPe" secondAttribute="centerY" id="3bL-D0-WJq"/>
+                            <constraint firstAttribute="trailing" secondItem="AVq-by-HjI" secondAttribute="trailing" constant="8" id="4MV-qE-nFt"/>
+                            <constraint firstItem="V1q-NK-XFM" firstAttribute="top" secondItem="gkZ-4i-RdG" secondAttribute="bottom" constant="2" id="72v-Iy-ZOY"/>
+                            <constraint firstItem="AVq-by-HjI" firstAttribute="leading" secondItem="gkZ-4i-RdG" secondAttribute="trailing" constant="16" id="7dT-fk-WHi"/>
+                            <constraint firstItem="gkZ-4i-RdG" firstAttribute="top" secondItem="PSM-6G-uPe" secondAttribute="top" constant="16" id="7qo-bN-u5o"/>
+                            <constraint firstItem="hKj-SL-0KN" firstAttribute="leading" secondItem="xeH-ia-IlD" secondAttribute="trailing" constant="8" id="JVE-S2-uV7"/>
+                            <constraint firstItem="gkZ-4i-RdG" firstAttribute="leading" secondItem="xeH-ia-IlD" secondAttribute="trailing" constant="8" id="MPl-ku-DNu"/>
+                            <constraint firstAttribute="bottom" secondItem="xeH-ia-IlD" secondAttribute="bottom" constant="16" id="UKs-Yy-wYQ"/>
+                            <constraint firstItem="xeH-ia-IlD" firstAttribute="top" secondItem="PSM-6G-uPe" secondAttribute="top" constant="16" id="fzj-KM-Sd9"/>
+                            <constraint firstItem="xeH-ia-IlD" firstAttribute="leading" secondItem="PSM-6G-uPe" secondAttribute="leading" constant="8" id="gvn-SB-cek"/>
+                            <constraint firstItem="V1q-NK-XFM" firstAttribute="leading" secondItem="xeH-ia-IlD" secondAttribute="trailing" constant="8" id="pA3-GI-f5n"/>
+                            <constraint firstItem="AVq-by-HjI" firstAttribute="leading" secondItem="hKj-SL-0KN" secondAttribute="trailing" constant="16" id="pRx-rD-aVZ"/>
+                            <constraint firstItem="hKj-SL-0KN" firstAttribute="top" secondItem="V1q-NK-XFM" secondAttribute="bottom" constant="2" id="sUY-zN-mbU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PSM-6G-uPe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="EJh-Y5-YwZ"/>
+                    <constraint firstItem="PSM-6G-uPe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eml-kb-eyJ"/>
+                    <constraint firstAttribute="bottom" secondItem="PSM-6G-uPe" secondAttribute="bottom" constant="8" id="mTB-pu-0ne"/>
+                    <constraint firstAttribute="trailing" secondItem="PSM-6G-uPe" secondAttribute="trailing" constant="8" id="q2i-Zi-fIl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="circularProgressBarView" destination="AVq-by-HjI" id="tkh-8r-BMb"/>
+                <outlet property="dateLabel" destination="V1q-NK-XFM" id="Mh1-Aq-C4x"/>
+                <outlet property="frontSquareView" destination="xeH-ia-IlD" id="QLy-fd-sSU"/>
+                <outlet property="nightsLabel" destination="hKj-SL-0KN" id="m1b-pD-XfZ"/>
+                <outlet property="packingView" destination="PSM-6G-uPe" id="7x8-GJ-JZY"/>
+                <outlet property="titleLabel" destination="gkZ-4i-RdG" id="lMN-2I-nHp"/>
+            </connections>
+            <point key="canvasLocation" x="54.198473282442748" y="42.605633802816904"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AdditionalOrange">
+            <color red="0.9882352941176471" green="0.63921568627450975" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainBlack">
+            <color red="0.12941176470588237" green="0.14509803921568629" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

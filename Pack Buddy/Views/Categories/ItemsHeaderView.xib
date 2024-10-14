@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemsHeaderView" customModule="Pack_Buddy" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="sgd-LU-OKK" id="h8u-Wl-9Go"/>
+                <outlet property="locationImageView" destination="BgP-qk-sO5" id="WYY-La-5ZV"/>
+                <outlet property="packingDateLabel" destination="fbH-Hi-gni" id="Asg-ar-1qe"/>
+                <outlet property="packingTitleLabel" destination="04g-oS-WX0" id="Uzb-b7-hao"/>
+                <outlet property="progressBarView" destination="2nY-KH-5kS" id="ySd-fg-weG"/>
+                <outlet property="progressPercentageLabel" destination="sCd-WG-y2X" id="4WV-uO-aeb"/>
+                <outlet property="progressView" destination="EMc-I8-6X0" id="aJ2-pZ-q7J"/>
+                <outlet property="totalItemLabel" destination="BNq-Ky-rBX" id="leZ-aC-Shp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgd-LU-OKK" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="59" width="393" height="240"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04g-oS-WX0" userLabel="Packing Title Label">
+                            <rect key="frame" x="8" y="4" width="377" height="40.333333333333336"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Trip to where am i doi">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="32" name="PlusJakartaSans-Bold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbH-Hi-gni" userLabel="Packing Date Label">
+                            <rect key="frame" x="8" y="48.333333333333329" width="377" height="15.333333333333336"/>
+                            <attributedString key="attributedText">
+                                <fragment content="16 Sep 2024 - 23 Sep 2024">
+                                    <attributes>
+                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <font key="NSFont" size="12" name="PlusJakartaSans-SemiBold"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="BgP-qk-sO5" userLabel="Location Image View">
+                            <rect key="frame" x="8" y="71.666666666666657" width="377" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="ogT-Tw-LYn"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMc-I8-6X0" userLabel="Progress View">
+                            <rect key="frame" x="20" y="166.66666666666666" width="353" height="50"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yP4-Yi-RUV" userLabel="Progress Stack View">
+                                    <rect key="frame" x="8" y="8" width="337" height="34"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNq-Ky-rBX" userLabel="Total Item Label">
+                                            <rect key="frame" x="0.0" y="9.3333333333333428" width="50.666666666666664" height="15.333333333333336"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="30 Items">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="PlusJakartaSans-SemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2nY-KH-5kS" userLabel="Progress Bar View">
+                                            <rect key="frame" x="58.666666666666671" y="15" width="243.33333333333331" height="4"/>
+                                        </progressView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCd-WG-y2X" userLabel="Progress Percentage Label">
+                                            <rect key="frame" x="310" y="9.3333333333333428" width="27" height="15.333333333333336"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="34%">
+                                                    <attributes>
+                                                        <font key="NSFont" size="12" name="PlusJakartaSans-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="yP4-Yi-RUV" firstAttribute="top" secondItem="EMc-I8-6X0" secondAttribute="top" constant="8" id="0mC-yo-hny"/>
+                                <constraint firstAttribute="bottom" secondItem="yP4-Yi-RUV" secondAttribute="bottom" constant="8" id="C4T-ul-Qrr"/>
+                                <constraint firstItem="yP4-Yi-RUV" firstAttribute="leading" secondItem="EMc-I8-6X0" secondAttribute="leading" constant="8" id="MdY-WR-IJp"/>
+                                <constraint firstAttribute="height" constant="50" id="VhQ-Og-w7W"/>
+                                <constraint firstAttribute="trailing" secondItem="yP4-Yi-RUV" secondAttribute="trailing" constant="8" id="vZa-Qn-btu"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstItem="04g-oS-WX0" firstAttribute="leading" secondItem="sgd-LU-OKK" secondAttribute="leading" constant="8" id="0qg-ub-oiu"/>
+                        <constraint firstItem="04g-oS-WX0" firstAttribute="centerX" secondItem="sgd-LU-OKK" secondAttribute="centerX" id="7Ge-8M-2Iz"/>
+                        <constraint firstItem="BgP-qk-sO5" firstAttribute="top" secondItem="fbH-Hi-gni" secondAttribute="bottom" constant="8" id="8cf-b9-rqJ"/>
+                        <constraint firstItem="fbH-Hi-gni" firstAttribute="leading" secondItem="sgd-LU-OKK" secondAttribute="leading" constant="8" id="ApL-il-Ein"/>
+                        <constraint firstAttribute="height" constant="240" id="EaQ-GN-cWu"/>
+                        <constraint firstItem="BgP-qk-sO5" firstAttribute="leading" secondItem="sgd-LU-OKK" secondAttribute="leading" constant="8" id="Q3X-ZM-Svb"/>
+                        <constraint firstAttribute="trailing" secondItem="fbH-Hi-gni" secondAttribute="trailing" constant="8" id="Txv-Ch-mxZ"/>
+                        <constraint firstItem="EMc-I8-6X0" firstAttribute="bottom" secondItem="BgP-qk-sO5" secondAttribute="bottom" constant="25" id="VNx-Qk-BGk"/>
+                        <constraint firstItem="04g-oS-WX0" firstAttribute="top" secondItem="sgd-LU-OKK" secondAttribute="top" constant="4" id="XMp-eZ-5Ma"/>
+                        <constraint firstItem="fbH-Hi-gni" firstAttribute="centerX" secondItem="sgd-LU-OKK" secondAttribute="centerX" id="csO-AF-MCP"/>
+                        <constraint firstItem="fbH-Hi-gni" firstAttribute="top" secondItem="04g-oS-WX0" secondAttribute="bottom" constant="4" id="fWZ-7T-Nhh"/>
+                        <constraint firstItem="EMc-I8-6X0" firstAttribute="leading" secondItem="sgd-LU-OKK" secondAttribute="leading" constant="20" id="pno-j5-SmJ"/>
+                        <constraint firstAttribute="trailing" secondItem="04g-oS-WX0" secondAttribute="trailing" constant="8" id="vKm-Yx-Lf9"/>
+                        <constraint firstAttribute="trailing" secondItem="BgP-qk-sO5" secondAttribute="trailing" constant="8" id="vNL-ey-AbY"/>
+                        <constraint firstAttribute="trailing" secondItem="EMc-I8-6X0" secondAttribute="trailing" constant="20" id="wvP-0B-IGe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="sgd-LU-OKK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5iv-WA-A7M"/>
+                <constraint firstItem="sgd-LU-OKK" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="BXE-vh-Vws"/>
+                <constraint firstItem="sgd-LU-OKK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xYp-fi-EcJ"/>
+            </constraints>
+            <point key="canvasLocation" x="26.717557251908396" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="city" width="3465" height="2131"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
