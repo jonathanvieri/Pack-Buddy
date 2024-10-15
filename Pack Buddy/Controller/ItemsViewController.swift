@@ -363,6 +363,7 @@ extension ItemsViewController {
             
             // Reload the table after deletion
             self.tableView.reloadData()
+            self.updateHeaderView(animated: true)
             self.restoreAddCategoryBarButton()
         }
         
@@ -409,7 +410,7 @@ extension ItemsViewController {
             // Reload to reflect the new Item
             self.tableView.reloadSections(IndexSet(integer: section), with: .none)
             self.updateHeaderView(animated: true)
-            
+
             // Scroll to the new item
             if let newIndexPath = self.viewModel.newItemIndexPath(for: section) {
                 self.tableView.scrollToRow(at: newIndexPath, at: .bottom, animated: true)

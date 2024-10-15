@@ -100,6 +100,8 @@ extension PackingViewController : UITableViewDataSource, UITableViewDelegate {
         
         if let selectedPacking = viewModel.packingAt(index: indexPath.row) {
             performSegue(withIdentifier: "goToItems", sender: selectedPacking)
+            restoreAddPackingBarButton()
+            restorePackingColor()
         }
     }
     

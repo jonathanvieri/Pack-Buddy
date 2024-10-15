@@ -264,8 +264,10 @@ extension AddPackingViewController {
         endDatePicker.minimumDate = viewModel.startDate
         
         // Clear the end date if it already has value and less than starting date
-        if viewModel.isEndDateValid() {
+        if !viewModel.isEndDateValid() {
+            print("End date is not valid")
             endDateTextField.text = ""
+            selectedEndDate = nil
             viewModel.endDate = nil
         }
         
