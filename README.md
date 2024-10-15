@@ -9,12 +9,16 @@ It simplifies trip preparation by organizing items into categories, tracking com
 
 
 ## Screenshots
-<p>
-  <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/packing-screen.png" height="350">
+<p align="center">
+  <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/packing-screen.png" height="400">
   &emsp;&emsp;
-  <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/add-packing-screen.png" height="350">
+  <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/add-packing-screen.png" height="400">
   &emsp;&emsp;
-  <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/items-screen.png" height="350">
+  <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/items-screen.png" height="400">
   &emsp;&emsp;
-  <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/add-category-screen.png" height="350">
+  <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/add-category-screen.png" height="400">
 </p>
+
+
+## License
+This project is licensed under the [MIT License](https://github.com/jonathanvieri/Chooaca/blob/master/LICENSE)
