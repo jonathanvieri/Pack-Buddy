@@ -54,7 +54,7 @@
                             </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="city" translatesAutoresizingMaskIntoConstraints="NO" id="BgP-qk-sO5" userLabel="Location Image View">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default1" translatesAutoresizingMaskIntoConstraints="NO" id="BgP-qk-sO5" userLabel="Location Image View">
                             <rect key="frame" x="8" y="71.666666666666657" width="377" height="120"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="120" id="ogT-Tw-LYn"/>
@@ -136,7 +136,7 @@
         </view>
     </objects>
     <resources>
-        <image name="city" width="3465" height="2131"/>
+        <image name="default1" width="3465" height="2131"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
