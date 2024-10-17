@@ -4,8 +4,14 @@
   <img src="https://github.com/jonathanvieri/Pack-Buddy/blob/main/images/applogo.png" width="150" height="150" >
 </p>
 
-<p>Pack Buddy is a packing organization app designed to help users create, manage, and track packing lists for trips. </p>
-<p>It simplifies trip preparation by organizing items into categories, tracking completion, and offering template suggestions to speed up the packing process.</p>
+<p>
+  Pack Buddy is a packing organization app designed to help users create, manage, and track packing lists for trips. 
+  It simplifies trip preparation by organizing items into categories, tracking completion, and offering template suggestions to speed up the packing process.
+</p>
+
+<p>
+  Pack Buddy ensures your packing process is organized and efficient, making it ideal for frequent travelers or anyone looking to stay prepared and avoid forgetting essential items.
+</p>
 
 
 ## Screenshots
@@ -29,7 +35,16 @@
 - **Search Functionality**: Quickly find specific trips by typing into the built-in search bar.
 - **Manage Items within Categories**: Easily add, edit, or delete items within each category for organized packing.
 
+
 ## Technical Overview
+ Built entirely using native Swift frameworks and no third-party libraries.
+- **UIKit**: Used for building the user interface.
+- **MVVM (Model-View-ViewModel)**: Applied for a clean separation of concerns, making the app modular and easier to maintain.
+- **Core Data**: Used for persistent storage of packing lists, categories, and items, with support for offline access and data relationships.
+- **Core Animation**: Utilized via UIView.animate & UIView.transition to create smooth transitions and animations.
+- **UIGestureRecognizer**: Implements gestures like long-press for editing and deleting, and UITableView’s built-in swipe actions for item deletion.
+- **UISearchBar**: Provides a search feature to quickly filter and find specific packing lists.
+- **Custom Views**: Extensively uses custom UIKit views for specialized components like progress bars and custom table view cells.
 
 
 ## Usage
