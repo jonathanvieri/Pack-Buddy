@@ -46,6 +46,16 @@
 		A7E1ADC92CB1459800AF3944 /* AddItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E1ADC62CB1459800AF3944 /* AddItemCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A7A591CB2CE1FA84001E7898 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7CE0C632C9AD8C80037DFBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7CE0C6A2C9AD8C80037DFBB;
+			remoteInfo = "Pack Buddy";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A71601052CB3C4060054D793 /* PackingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingsHeaderView.swift; sourceTree = "<group>"; };
 		A71601072CB3C4240054D793 /* PackingsHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackingsHeaderView.xib; sourceTree = "<group>"; };
@@ -66,6 +76,7 @@
 		A743487B2CB7EE5C00D40F54 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		A743487D2CB7F91500D40F54 /* UIColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTransformer.swift; sourceTree = "<group>"; };
 		A74348852CB95F8600D40F54 /* PackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingViewModel.swift; sourceTree = "<group>"; };
+		A7A591C72CE1FA84001E7898 /* PackBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CE0C6B2C9AD8C80037DFBB /* Pack Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pack Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CE0C6E2C9AD8C80037DFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CE0C702C9AD8C80037DFBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,9 +101,17 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A74348832CB93A4800D40F54 /* Fonts */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Fonts; sourceTree = "<group>"; };
+		A7A591C82CE1FA84001E7898 /* PackBuddyTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PackBuddyTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A7A591C42CE1FA84001E7898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7CE0C682C9AD8C80037DFBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				A7CE0C6D2C9AD8C80037DFBB /* Pack Buddy */,
+				A7A591C82CE1FA84001E7898 /* PackBuddyTests */,
 				A7CE0C6C2C9AD8C80037DFBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -192,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				A7CE0C6B2C9AD8C80037DFBB /* Pack Buddy.app */,
+				A7A591C72CE1FA84001E7898 /* PackBuddyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +269,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A7A591C62CE1FA84001E7898 /* PackBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A591CD2CE1FA84001E7898 /* Build configuration list for PBXNativeTarget "PackBuddyTests" */;
+			buildPhases = (
+				A7A591C32CE1FA84001E7898 /* Sources */,
+				A7A591C42CE1FA84001E7898 /* Frameworks */,
+				A7A591C52CE1FA84001E7898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7A591CC2CE1FA84001E7898 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A7A591C82CE1FA84001E7898 /* PackBuddyTests */,
+			);
+			name = PackBuddyTests;
+			packageProductDependencies = (
+			);
+			productName = PackBuddyTests;
+			productReference = A7A591C72CE1FA84001E7898 /* PackBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A7CE0C6A2C9AD8C80037DFBB /* Pack Buddy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7CE0C822C9AD8C90037DFBB /* Build configuration list for PBXNativeTarget "Pack Buddy" */;
@@ -275,9 +319,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					A7A591C62CE1FA84001E7898 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = A7CE0C6A2C9AD8C80037DFBB;
+					};
 					A7CE0C6A2C9AD8C80037DFBB = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -297,11 +345,19 @@
 			projectRoot = "";
 			targets = (
 				A7CE0C6A2C9AD8C80037DFBB /* Pack Buddy */,
+				A7A591C62CE1FA84001E7898 /* PackBuddyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A7A591C52CE1FA84001E7898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7CE0C692C9AD8C80037DFBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -324,6 +380,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A7A591C32CE1FA84001E7898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7CE0C672C9AD8C80037DFBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +421,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A7A591CC2CE1FA84001E7898 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7CE0C6A2C9AD8C80037DFBB /* Pack Buddy */;
+			targetProxy = A7A591CB2CE1FA84001E7898 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A7CE0C742C9AD8C80037DFBB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -378,6 +449,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A7A591CE2CE1FA84001E7898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y7VSJ5XSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanvieri.PackBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pack Buddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pack Buddy";
+			};
+			name = Debug;
+		};
+		A7A591CF2CE1FA84001E7898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y7VSJ5XSR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jonathanvieri.PackBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pack Buddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pack Buddy";
+			};
+			name = Release;
+		};
 		A7CE0C802C9AD8C90037DFBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -562,6 +671,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A7A591CD2CE1FA84001E7898 /* Build configuration list for PBXNativeTarget "PackBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A591CE2CE1FA84001E7898 /* Debug */,
+				A7A591CF2CE1FA84001E7898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A7CE0C662C9AD8C80037DFBB /* Build configuration list for PBXProject "Pack Buddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
