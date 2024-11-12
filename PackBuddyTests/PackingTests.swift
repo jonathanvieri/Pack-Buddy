@@ -51,7 +51,7 @@ final class PackingTests: XCTestCase {
     
     //MARK: - Positive Test Cases
 
-    func testSuccessfulCreatePacking() {
+    func testCreatePacking() {
         // Given: Setup attributes for a new Packing
         let title = "Trip to Bali"
         let startDate = Date()
@@ -83,7 +83,7 @@ final class PackingTests: XCTestCase {
         }
     }
 
-    func testSuccessfulFetchAllPackings() {
+    func testFetchAllPackings() {
         // Given: Create multiple packings
         let _ = coreDataManager.createNewPacking(title: "Trip 1", location: "Location 1", startDate: Date(), endDate: Date().addingTimeInterval(86400), color: UIColor.red)
         let _ = coreDataManager.createNewPacking(title: "Trip 2", location: "Location 2", startDate: Date(), endDate: Date().addingTimeInterval(86400 * 2), color: UIColor.green)
@@ -96,7 +96,7 @@ final class PackingTests: XCTestCase {
         XCTAssertEqual(packings.count, 3, "There should only be three packing entities, but found \(packings.count)")
     }
     
-    func testSuccessfulFetchSortedPackings() {
+    func testFetchSortedPackings() {
         // Given: Create multiple packings with different createdAt
         let packing1 = coreDataManager.createNewPacking(title: "Trip 1", location: "Location 1", startDate: Date(), endDate: Date().addingTimeInterval(86400), color: UIColor.red)
         let packing2 = coreDataManager.createNewPacking(title: "Trip 2", location: "Location 2", startDate: Date(), endDate: Date().addingTimeInterval(86400 * 2), color: UIColor.green)

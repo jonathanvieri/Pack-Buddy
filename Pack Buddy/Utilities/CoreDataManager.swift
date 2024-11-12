@@ -129,7 +129,6 @@ class CoreDataManager {
         return items
     }
     
-    //
     func createItemsFromTitles(_ titles: [String]) -> [Item] {
         var items = [Item]()
         

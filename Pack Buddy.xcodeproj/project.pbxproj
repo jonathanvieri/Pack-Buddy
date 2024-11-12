@@ -26,6 +26,7 @@
 		A743487C2CB7EE5C00D40F54 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743487B2CB7EE5C00D40F54 /* ItemsViewController.swift */; };
 		A743487E2CB7F91A00D40F54 /* UIColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743487D2CB7F91500D40F54 /* UIColorTransformer.swift */; };
 		A74348862CB95F8900D40F54 /* PackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74348852CB95F8600D40F54 /* PackingViewModel.swift */; };
+		A7A591E92CE377CF001E7898 /* Core Data.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = A7A591E82CE377CF001E7898 /* Core Data.xctestplan */; };
 		A7CE0C6F2C9AD8C80037DFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE0C6E2C9AD8C80037DFBB /* AppDelegate.swift */; };
 		A7CE0C712C9AD8C80037DFBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CE0C702C9AD8C80037DFBB /* SceneDelegate.swift */; };
 		A7CE0C762C9AD8C80037DFBB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A7CE0C752C9AD8C80037DFBB /* Base */; };
@@ -77,6 +78,7 @@
 		A743487D2CB7F91500D40F54 /* UIColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTransformer.swift; sourceTree = "<group>"; };
 		A74348852CB95F8600D40F54 /* PackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingViewModel.swift; sourceTree = "<group>"; };
 		A7A591C72CE1FA84001E7898 /* PackBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PackBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A591E82CE377CF001E7898 /* Core Data.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Core Data.xctestplan"; sourceTree = "<group>"; };
 		A7CE0C6B2C9AD8C80037DFBB /* Pack Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pack Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CE0C6E2C9AD8C80037DFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7CE0C702C9AD8C80037DFBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		A7CE0C622C9AD8C80037DFBB = {
 			isa = PBXGroup;
 			children = (
+				A7A591E82CE377CF001E7898 /* Core Data.xctestplan */,
 				A7CE0C6D2C9AD8C80037DFBB /* Pack Buddy */,
 				A7A591C82CE1FA84001E7898 /* PackBuddyTests */,
 				A7CE0C6C2C9AD8C80037DFBB /* Products */,
@@ -355,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A591E92CE377CF001E7898 /* Core Data.xctestplan in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
