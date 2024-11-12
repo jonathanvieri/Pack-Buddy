@@ -11,20 +11,26 @@ import CoreData
 class CoreDataManager {
     static let shared = CoreDataManager()
     
-    // MARK: - Core Data Stack
-    lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "PackBuddy")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
+    let persistentContainer: NSPersistentContainer
     
     // Context to interact with Core Data
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext
+    }
+    
+    // Default initializer
+    private init() {
+        self.persistentContainer = NSPersistentContainer(name: "PackBuddy")
+        persistentContainer.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+    }
+    
+    // Custom initializer for testing, allowing injection of different NSPersistentContainer
+    init(container: NSPersistentContainer) {
+        self.persistentContainer = container
     }
 
     // MARK: - Core Data Saving support
@@ -76,7 +82,7 @@ class CoreDataManager {
         fetchRequest.sortDescriptors = [sortDescriptor]
         
         do {
-            let sortedPackings = try CoreDataManager.shared.context.fetch(fetchRequest)
+            let sortedPackings = try context.fetch(fetchRequest)
             return sortedPackings
         } catch {
             print("Error fetching packings: \(error)")
@@ -102,7 +108,6 @@ class CoreDataManager {
     
     //MARK: - Items Methods
     
-    //
     func createItemsFromSelectedTemplates(selectedTemplate: TemplateModel) -> [Item] {
         var items = [Item]()
         
@@ -124,7 +129,6 @@ class CoreDataManager {
         return items
     }
     
-    //
     func createItemsFromTitles(_ titles: [String]) -> [Item] {
         var items = [Item]()
         

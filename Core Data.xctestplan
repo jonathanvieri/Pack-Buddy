@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "3CDB4459-4899-4211-AC49-16B7072D63CC",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Pack Buddy.xcodeproj",
+        "identifier" : "A7A591C62CE1FA84001E7898",
+        "name" : "PackBuddyTests"
+      }
+    }
+  ],
+  "version" : 1
+}
