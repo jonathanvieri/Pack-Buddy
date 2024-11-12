@@ -22,11 +22,11 @@ final class PackingTests: XCTestCase {
         description.type = NSInMemoryStoreType
         container.persistentStoreDescriptions = [description]
         
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+        container.loadPersistentStores { (storeDescription, error) in
             if let error = error {
                 fatalError("Failed to load in-memory Core Data store: \(error.localizedDescription)")
             }
-        })
+        }
         return container
     }()
     

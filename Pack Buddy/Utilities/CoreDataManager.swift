@@ -108,7 +108,6 @@ class CoreDataManager {
     
     //MARK: - Items Methods
     
-    //
     func createItemsFromSelectedTemplates(selectedTemplate: TemplateModel) -> [Item] {
         var items = [Item]()
         
