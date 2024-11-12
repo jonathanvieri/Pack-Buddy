@@ -45,6 +45,7 @@
 - **UIGestureRecognizer**: Implements gestures like long-press for editing and deleting, and UITableView’s built-in swipe actions for item deletion.
 - **UISearchBar**: Provides a search feature to quickly filter and find specific packing lists.
 - **Custom Views**: Extensively uses custom UIKit views for specialized components like progress bars and custom table view cells.
+- **XCTest**: Unit testing using XCTest framework.
 
 
 ## Usage
