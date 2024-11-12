@@ -120,5 +120,36 @@ final class PackingTests: XCTestCase {
         XCTAssertEqual(packings[2].title, "Trip 3", "Third item should be the latest item (Trip 3)")
     }
 
+    //MARK: - Negative Test Cases
     
+    func testCreatePackingWithMissingFields() {
+        // Given: Create a Packing entity with missing required field
+        let packing = Packing(context: coreDataManager.context)
+        packing.title = "New Packing"
+        
+        // When: Attempt to save the context
+        do {
+            try coreDataManager.context.save()
+            XCTFail("Saving should fail due to missing required fields")
+        } catch {
+            // Then: Verify an error is thrown
+            XCTAssertNotNil(error, "Expected error due to missing required fields")
+        }
+    }
+    
+    func testFetchAllPackingsWithNoData() {
+        // When: Fetch all packings with no data
+        let packings = coreDataManager.fetchAllPackings()
+        
+        // Then: Verify result is empty
+        XCTAssertTrue(packings.isEmpty, "Expected no packings, but found \(packings.count) items")
+    }
+    
+    func testFetchSortedPackingsWithNoData() {
+        // When: Fetch sorted packings with no data
+        let packings = coreDataManager.fetchSortedPackings()
+        
+        // Then:
+        XCTAssertTrue(packings.isEmpty, "Expected no packings, but found \(packings.count) items")
+    }
 }
