@@ -58,4 +58,4 @@
 
 
 ## License
-This project is licensed under the [MIT License](https://github.com/jonathanvieri/Chooaca/blob/master/LICENSE)
+This project is licensed under the [MIT License](https://github.com/jonathanvieri/Pack-Buddy/blob/main/README.md)
